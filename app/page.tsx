@@ -4,13 +4,13 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <section className={styles.hero}>
+    <main className={styles.hero}>
       <Image
         className={styles.heroImage}
-        src="/images/hero.png"
+        src="/images/hero-image.png"
         alt="Camper near the lake"
-        width={1788}
-        height={864}
+        width={1440}
+        height={764}
         sizes="100vw"
         priority
       />
@@ -28,6 +28,6 @@ export default function Home() {
           View Now
         </Link>
       </div>
-    </section>
+    </main>
   );
 }

@@ -18,7 +18,7 @@ export async function fetchCampers(
 ): Promise<CampersResponse> {
   const response = await campersApi.get<CampersResponse>("/campers", {
     params: {
-      page: page,
+      page,
       perPage: 4,
       location: filters.location || undefined,
       form: filters.form || undefined,

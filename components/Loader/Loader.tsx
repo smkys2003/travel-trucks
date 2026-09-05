@@ -7,7 +7,7 @@ export default function Loader() {
       <div className={styles.modal}>
         <Image
           className={styles.spinner}
-          src="/images/loader.svg"
+          src="/loader.svg"
           alt=""
           width={72}
           height={72}

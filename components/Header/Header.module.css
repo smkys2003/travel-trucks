@@ -5,13 +5,11 @@
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  position: relative;
+  display: flex;
   align-items: center;
   width: 100%;
-  max-width: 1440px;
   height: 100%;
-  margin: 0 auto;
   padding: 0 64px;
 }
 
@@ -22,10 +20,12 @@
 }
 
 .navigation {
+  position: absolute;
+  left: 50%;
   display: flex;
-  grid-column: 2;
   gap: 32px;
   align-items: center;
+  transform: translateX(-50%);
 }
 
 .link,

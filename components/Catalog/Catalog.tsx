@@ -65,7 +65,7 @@ export default function Catalog() {
       <FilterForm key={formKey} onSearch={handleSearch} />
 
       <section className={styles.catalog}>
-        {isFetching && !isFetchingNextPage && <Loader />}
+        {isFetching && <Loader />}
 
         {isError && (
           <p className={styles.message}>
@@ -92,7 +92,7 @@ export default function Catalog() {
                 onClick={() => fetchNextPage()}
                 disabled={isFetchingNextPage}
               >
-                {isFetchingNextPage ? "Loading..." : "Load more"}
+                Load more
               </button>
             )}
           </>

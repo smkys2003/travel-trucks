@@ -47,6 +47,7 @@
 
 .price {
   flex-shrink: 0;
+  margin-right: 73px;
 }
 
 .details {
@@ -55,7 +56,7 @@
   gap: 16px;
   margin-top: 8px;
   color: #475467;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .rating,
@@ -64,6 +65,8 @@
   align-items: center;
   gap: 4px;
   color: #101828;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .rating svg {
@@ -76,6 +79,7 @@
   color: #475467;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-size: 16px;
 }
 
 .badges {
@@ -88,9 +92,11 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 10px 14px;
+  height: 48px;
+  padding: 0 18px;
   color: #101828;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 24px;
   text-transform: capitalize;
   background-color: #f2f4f7;
   border-radius: 100px;
@@ -107,6 +113,7 @@
   background-color: #829b91;
   border-radius: 200px;
   transition: background-color 200ms ease;
+  margin-top: 16px;
 }
 
 .showMore:hover {
@@ -116,4 +123,10 @@
 .showMore:focus-visible {
   outline: 2px solid #101828;
   outline-offset: 3px;
+}
+
+.badge svg {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
 }

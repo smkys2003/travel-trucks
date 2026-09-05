@@ -12,7 +12,7 @@ interface CamperCardProps {
 }
 
 export default function CamperCard({ camper }: CamperCardProps) {
-  const formattedLocation = camper.location.split(", ").reverse().join(", ");
+  const [country, city] = camper.location.split(", ");
   return (
     <article className={styles.card}>
       {camper.coverImage && (
@@ -23,6 +23,7 @@ export default function CamperCard({ camper }: CamperCardProps) {
           width={219}
           height={240}
           sizes="219px"
+          loading="eager"
         />
       )}
 
@@ -42,7 +43,7 @@ export default function CamperCard({ camper }: CamperCardProps) {
 
             <span className={styles.location}>
               <CiLocationOn />
-              {formattedLocation}
+              {city}, {country}
             </span>
           </div>
         </div>
