@@ -24,7 +24,7 @@ export default function Home() {
           You can find everything you want in our catalog
         </p>
 
-        <Link href="/catalog" className={styles.button}>
+        <Link href="/catalog" prefetch={true} className={styles.button}>
           View Now
         </Link>
       </div>

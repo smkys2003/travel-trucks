@@ -31,6 +31,10 @@
   pointer-events: none;
 }
 
+.inputWrapper:focus-within .locationIcon {
+  color: #101828;
+}
+
 .locationInput {
   width: 100%;
   height: 56px;

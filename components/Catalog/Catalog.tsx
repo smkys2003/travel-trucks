@@ -62,6 +62,8 @@ export default function Catalog() {
 
   return (
     <main className={styles.page}>
+      <h1 className={styles.visuallyHidden}>Camper catalog</h1>
+
       <FilterForm key={formKey} onSearch={handleSearch} />
 
       <section className={styles.catalog}>
